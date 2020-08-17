@@ -5,7 +5,7 @@ Repositório com os códigos realizados em sala dividio pelos temas tratados.
 
 ## Assuntos
 
-- [ ] Aula 01 - Revisão de POO {Construtor, Encapsulamento, Herança}
+- [X] Aula 01 - Revisão de POO {Construtor, Encapsulamento, Herança}
 - [ ] Aula 02 - Revisão de POO {Polimorfismo, Interface}
 - [ ] Aula 03 - Maven
 - [ ] Aula 04 - Github
