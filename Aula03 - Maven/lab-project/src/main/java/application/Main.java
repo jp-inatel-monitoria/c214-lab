@@ -2,6 +2,7 @@ package application;
 
 import java.util.Scanner;
 
+import model.arquivos.Arquivo;
 import model.entities.Carteira;
 import model.entities.Investimento;
 import model.entities.RendaFixa;
@@ -42,13 +43,13 @@ public class Main {
 				
 			case 4:
 				if(carteira != null) {
-					carteira.gerarJson();					
+					Arquivo.gerarJson(carteira.getInvestimentos());
 				}
 				break;
 				
 			case 5:
 				if(carteira != null) {
-					carteira.gerarCsv();			
+					Arquivo.gerarCsv(carteira.getInvestimentos());
 				}
 			case 0:
 				break;
