@@ -6,8 +6,8 @@ Repositório com os códigos realizados em sala dividio pelos temas tratados.
 ## Assuntos
 
 - [X] Aula 01 - Revisão de POO {Construtor, Encapsulamento, Herança}
-- [ ] Aula 02 - Revisão de POO {Polimorfismo, Interface}
-- [ ] Aula 03 - Maven
+- [X] Aula 02 - Revisão de POO {Polimorfismo, Interface}
+- [X] Aula 03 - Maven
 - [ ] Aula 04 - Github
 - [ ] Aula 05 - Teste de unidade com JUnit
 - [ ] Aula 06 - Teste Mock com Mockito
