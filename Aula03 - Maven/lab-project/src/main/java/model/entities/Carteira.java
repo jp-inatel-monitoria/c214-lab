@@ -17,11 +17,11 @@ public class Carteira {
 		this.corretora = corretora;
 		this.investimentos = new ArrayList<>();
 	}
-
+	
 	public double getValorInvestido() {
 		return valorInvestido;
 	}
-
+	
 	public void setValorInvestido(double valorInvestido) {
 		this.valorInvestido = valorInvestido;
 	}
@@ -45,5 +45,6 @@ public class Carteira {
 	public List<Investimento> getInvestimentos() {
 		return investimentos;
 	}
-		
+
+	
 }
