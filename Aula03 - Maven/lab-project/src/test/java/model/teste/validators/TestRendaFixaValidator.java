@@ -13,7 +13,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import model.entities.RendaFixa;
-import model.entities.validators.RendaFixaValidator;
+import model.entities.validators.RendaFixaService;
 import model.interfaces.RendaFixaRepository;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -32,17 +32,17 @@ public class TestRendaFixaValidator {
 	private RendaFixaRepository rendaFixaRepository;
 	
 	@InjectMocks
-	private RendaFixaValidator rendaFixaValidator;
+	private RendaFixaService rendaFixaService;
 	
 	@Test
 	public void testSalvoComSucesso() {
-		rendaFixaValidator.insert(rendaFixaValido);
+		rendaFixaService.insert(rendaFixaValido);
 		verify(rendaFixaRepository, times(1)).save(rendaFixaValido);
 	}
 	
 	@Test(expected = Exception.class)
 	public void testCamposObrigado() {
-		rendaFixaValidator.insert(rendaFixaInvalido);
+		rendaFixaService.insert(rendaFixaInvalido);
 	}
 
 }

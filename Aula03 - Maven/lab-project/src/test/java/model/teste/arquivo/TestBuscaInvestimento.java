@@ -36,6 +36,7 @@ public class TestBuscaInvestimento {
 		
 		String nome = "Tesouro Selic";
 		
+		//Simula a implementação do do metodo busca, retornando a constante
 		Mockito.when(service.busca(nome)).thenReturn(RendaFixaConst.RENDA_FIXA);
 
 		RendaFixa investimento = buscaInvestimento.getInvestimento(nome);

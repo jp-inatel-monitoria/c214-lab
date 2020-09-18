@@ -3,11 +3,11 @@ package model.entities.validators;
 import model.entities.RendaFixa;
 import model.interfaces.RendaFixaRepository;
 
-public class RendaFixaValidator {
+public class RendaFixaService {
 	
 	private RendaFixaRepository rendaRepository;
 
-	public RendaFixaValidator(RendaFixaRepository rendaRepository) {
+	public RendaFixaService(RendaFixaRepository rendaRepository) {
 		this.rendaRepository = rendaRepository;
 	}
 	
