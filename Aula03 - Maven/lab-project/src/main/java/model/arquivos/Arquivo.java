@@ -70,12 +70,5 @@ public class Arquivo {
 		return fileWriter;
 	}
 
-	public static void setFile(File file) {
-		Arquivo.file = file;
-	}
 
-	public static void setFileWriter(FileWriter fileWriter) {
-		Arquivo.fileWriter = fileWriter;
-	}
-	
 }
