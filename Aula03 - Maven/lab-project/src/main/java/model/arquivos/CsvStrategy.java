@@ -1,43 +1,21 @@
 package model.arquivos;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.opencsv.CSVWriter;
 
 import model.entities.Investimento;
 import model.entities.RendaFixa;
 
-public class Arquivo {
+public class CsvStrategy extends ArquivoStrategy{
 
-	private static File file;
-	private static FileWriter fileWriter;
-
-	public static void gerarJson(List<Investimento> investimentos) {
+	@Override
+	public void gerar(List<Investimento> investimentos) {
 		if (investimentos != null) {
-			Gson gson = new GsonBuilder().setPrettyPrinting().create();
-			String json = gson.toJson(investimentos);
-
 			try {
-				fileWriter = new FileWriter("investimentos.json");
-				fileWriter.write(json);
-				fileWriter.close();
-
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-	}
-
-	public static void gerarCsv(List<Investimento> investimentos) {
-		if (investimentos != null) {
-			file = new File("investimentos.csv");
-			try {
-				fileWriter = new FileWriter(file, true);
+				fileWriter = new FileWriter("investimentos.csv", true);
 				CSVWriter csvWriter = new CSVWriter(fileWriter);
 				String[] header = { "Nome", "Data de Compra", "Data de Vencimento", "Preço", "Quantidade", "Rendimento" };
 				csvWriter.writeNext(header);
@@ -61,14 +39,5 @@ public class Arquivo {
 			}
 		}
 	}
-
-	public static File getFile() {
-		return file;
-	}
-
-	public static FileWriter getFileWriter() {
-		return fileWriter;
-	}
-
 
 }

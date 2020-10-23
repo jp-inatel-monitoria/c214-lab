@@ -52,5 +52,4 @@ public abstract class Investimento{
 		this.quantidade = quantidade;
 	}
 	
-	
 }
