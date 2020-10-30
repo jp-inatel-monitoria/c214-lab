@@ -11,10 +11,10 @@ Repositório com os códigos realizados em sala dividio pelos temas tratados.
 - [X] Aula 04 - Github
 - [X] Aula 05 - Teste de unidade com JUnit
 - [X] Aula 06 - Teste Mock com Mockito
-- [ ] Aula 07 - Teste ponta-a-ponta
-- [ ] Aula 08 - Métricas
-- [ ] Aula 09 - Jenkins
-- [ ] Aula 10 - Travis
+- [X] Aula 07 - Teste ponta-a-ponta
+- [X] Aula 08 - Métricas
+- [X] Aula 09 - Jenkins
+- [X] Aula 10 - Travis
 - [ ] Aula 11 - Design Patterns
 - [ ] Aula 12 - Design Patterns
 - [ ] Aula 13 - Estrutura MVC
