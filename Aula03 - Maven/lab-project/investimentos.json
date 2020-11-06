@@ -1,10 +1,10 @@
 [
   {
-    "dataVencimento": "20/12/2025",
-    "rendimento": 2.75,
+    "dataVencimento": "20/10/2025",
+    "rendimento": 1.5,
     "nome": "Tesouro Selic",
-    "dataCompra": "Oct 22, 2020 11:35:06 PM",
-    "preco": 78.65,
-    "quantidade": 50.0
+    "dataCompra": "Nov 6, 2020 1:35:27 AM",
+    "preco": 68.75,
+    "quantidade": 2.0
   }
 ]

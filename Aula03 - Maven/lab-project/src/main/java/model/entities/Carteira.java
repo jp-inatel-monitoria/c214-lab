@@ -33,14 +33,6 @@ public class Carteira {
 	public void setCorretora(String corretora) {
 		this.corretora = corretora;
 	}
-
-	public void adicionarInvestimento(Investimento investimento, Scanner sc, Carteira c) {
-		if (investimento instanceof RendaFixa) {
-			investimento = InvestimentoFactory.createRendaFixa(sc, c);
-			valorInvestido += investimento.getPreco() * investimento.getQuantidade();
-			investimentos.add(investimento);
-		}
-	}
 	
 	public List<Investimento> getInvestimentos() {
 		return investimentos;

@@ -7,22 +7,9 @@ import model.entities.Carteira;
 import model.entities.RendaFixa;
 
 public class InvestimentoFactory {
-	
-	public static RendaFixa createRendaFixa(Scanner sc, Carteira c) {
-		if(c != null) {
-			sc.nextLine();
-			System.out.println("Nome: ");
-			String nome = sc.nextLine();
-			System.out.println("Preço: ");
-			double preco = sc.nextDouble();
-			System.out.println("Quantidade");
-			double quantidade = sc.nextDouble();
-			sc.nextLine();
-			System.out.println("Data de vencimento: ");
-			String dataVencimento = sc.nextLine();
-			System.out.println("Rendimento: ");
-			double rendimento = sc.nextDouble();
-			
+		
+	public static RendaFixa createRendaFixa(Carteira c, String nome, double preco, double quantidade, String dataVencimento, double rendimento) {
+		if(c != null) {		
 			return new RendaFixa(nome, new Date(), preco, quantidade, dataVencimento, rendimento);
 		}else {
 			return null;
